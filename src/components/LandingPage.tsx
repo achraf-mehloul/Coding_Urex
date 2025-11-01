@@ -6,19 +6,43 @@ interface LandingPageProps {
 
 export default function LandingPage({ onJoinNow }: LandingPageProps) {
   return (
-    <div className="min-h-screen bg-black text-white overflow-hidden">
-      <div className="fixed inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black opacity-90" />
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNkNGFmMzciIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2YzAtMy4zMTQgMi42ODYtNiA2LTZzNi0yLjY4NiA2LTYtMi42ODYtNi02LTYtNiAyLjY4Ni02IDYtMi42ODYgNi02IDZjLTMuMzE0IDAtNiAyLjY4Ni02IDZ6TTAgMTZjMC0zLjMxNCAyLjY4Ni02IDYtNnM2LTIuNjg2IDYtNi0yLjY4Ni02LTYtNi02IDIuNjg2LTYgNi0yLjY4NiA2LTYgNmMtMy4zMTQgMC02IDIuNjg2LTYgNnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-20" />
+    <div className="min-h-screen bg-black text-white overflow-hidden relative">
+      {/* 🔹 خلفية الفيديو */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <video
+          src="/background.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover blur-sm"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-gray-900/60 to-black/80" />
       </div>
 
+      {/* المحتوى */}
       <div className="relative z-10">
         <header className="container mx-auto px-4 py-6 flex justify-between items-center">
-          <img
-            src="/552102244_1511459556843066_700200828006065403_n-removebg-preview.png"
-            alt="Urex Club"
-            className="h-16 md:h-20 filter drop-shadow-2xl"
-          />
+          <div className="relative">
+            {/* اللوقو */}
+            <img
+              src="/552102244_1511459556843066_700200828006065403_n-removebg-preview.png"
+              alt="Urex Club"
+              className="h-16 md:h-20 filter drop-shadow-2xl relative z-10"
+            />
+            {/* الفيديو وراء اللوقو */}
+            <div className="absolute inset-0 -z-10">
+              <video
+                src="/background.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover blur-sm rounded-2xl opacity-80"
+              />
+            </div>
+          </div>
+
           <div className="text-right">
             <p className="text-xs md:text-sm text-gray-400">Presented by</p>
             <p className="text-lg md:text-xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
