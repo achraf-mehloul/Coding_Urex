@@ -106,7 +106,7 @@ export default function RegistrationForm({ onBack }: RegistrationFormProps) {
                   value={formData.full_name}
                   onChange={(e) => setFormData({ ...formData, full_name: e.target.value })}
                   className="w-full bg-black/50 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500 transition-colors"
-                  placeholder="Enter your first name"
+                  placeholder="أكتب إسمك"
                 />
               </div>
 
@@ -120,7 +120,7 @@ export default function RegistrationForm({ onBack }: RegistrationFormProps) {
                   value={formData.last_name}
                   onChange={(e) => setFormData({ ...formData, last_name: e.target.value })}
                   className="w-full bg-black/50 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500 transition-colors"
-                  placeholder="Enter your last name"
+                  placeholder="أكتب لقبك"
                 />
               </div>
             </div>
@@ -149,7 +149,7 @@ export default function RegistrationForm({ onBack }: RegistrationFormProps) {
                   value={formData.major}
                   onChange={(e) => setFormData({ ...formData, major: e.target.value })}
                   className="w-full bg-black/50 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500 transition-colors"
-                  placeholder="e.g., Computer Science"
+                  placeholder="أكتب تخصصك الجامعي"
                 />
               </div>
 
@@ -163,7 +163,7 @@ export default function RegistrationForm({ onBack }: RegistrationFormProps) {
                   value={formData.department}
                   onChange={(e) => setFormData({ ...formData, department: e.target.value })}
                   className="w-full bg-black/50 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500 transition-colors"
-                  placeholder="e.g., Engineering"
+                  placeholder="أكتب إسم القسم"
                 />
               </div>
             </div>
@@ -178,7 +178,7 @@ export default function RegistrationForm({ onBack }: RegistrationFormProps) {
                 value={formData.campus}
                 onChange={(e) => setFormData({ ...formData, campus: e.target.value })}
                 className="w-full bg-black/50 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500 transition-colors"
-                placeholder="Enter your campus location"
+                placeholder="أكتب إسم الكلية"
               />
             </div>
 
@@ -191,7 +191,7 @@ export default function RegistrationForm({ onBack }: RegistrationFormProps) {
                 value={formData.programming_knowledge}
                 onChange={(e) => setFormData({ ...formData, programming_knowledge: e.target.value })}
                 className="w-full bg-black/50 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500 transition-colors h-24 md:h-32 resize-none"
-                placeholder="Tell us about your programming experience..."
+                placeholder="مادا تعرف عن البرمجة"
               />
             </div>
 
@@ -204,7 +204,7 @@ export default function RegistrationForm({ onBack }: RegistrationFormProps) {
                 value={formData.programming_goals}
                 onChange={(e) => setFormData({ ...formData, programming_goals: e.target.value })}
                 className="w-full bg-black/50 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-yellow-500 transition-colors h-24 md:h-32 resize-none"
-                placeholder="Share your programming goals with us..."
+                placeholder="ماهو هدفك من تعلم البرمجة"
               />
             </div>
 
